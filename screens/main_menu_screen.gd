@@ -11,7 +11,7 @@ func _ready() -> void:
 # ========= Event Handlers
 
 func _on_New_Game_pressed() -> void:
-	pass # Replace with function body.
+	var _res = get_tree().change_scene("res://screens/level_selection_screen.tscn")
 
 
 func _on_Continue_pressed() -> void:
