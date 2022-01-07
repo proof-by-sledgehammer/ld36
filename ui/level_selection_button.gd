@@ -1,10 +1,10 @@
-extends Button
+extends Control
 
 var level
 
-func _init(lvl) -> void:
+func init(lvl) -> void:
 	if State.max_level_unlocked < lvl:
-		self.disabled = true
+		$Main.disabled = true
 	
 	self.level = lvl
-	self.text = str(lvl)
+	$Main.text = str(lvl)

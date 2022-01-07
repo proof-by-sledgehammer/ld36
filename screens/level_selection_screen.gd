@@ -1,11 +1,12 @@
 extends Control
 
-var LevelSelectionButton = preload("res://ui/level_selection_button.gd")
+var LevelSelectionButton = preload("res://ui/level_selection_button.tscn")
 
 func _ready() -> void:
 	for i in range(0, 15):
 		var lvl = i + 1
-		var button = LevelSelectionButton.new(lvl)
+		var button = LevelSelectionButton.instance()
+		button.init(lvl)
 		$Buttons.add_child(button)
 
 
