@@ -1,5 +1,13 @@
 extends Control
 
+# ========= Engine Hooks
+
+func _ready() -> void:
+	if State.savegame_exists():
+		State.load_savegame()
+	else:
+		$Buttons/Continue.disabled = true
+
 # ========= Event Handlers
 
 func _on_New_Game_pressed() -> void:
