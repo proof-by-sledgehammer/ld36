@@ -1,0 +1,76 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://ui/upgrade_dialog.gd" type="Script" id=1]
+[ext_resource path="res://ui/upgrade_slider.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/images/dialog_background.png" type="Texture" id=3]
+
+[node name="Upgrade Dialog" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.695413, 0.353479 )
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Selections" type="VBoxContainer" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+
+[node name="Wheels" parent="Selections" instance=ExtResource( 2 )]
+margin_right = 61.0
+margin_bottom = 14.0
+num_upgrades = 3
+display_name = "Wheels"
+
+[node name="Weight" parent="Selections" instance=ExtResource( 2 )]
+margin_top = 18.0
+margin_right = 61.0
+margin_bottom = 32.0
+display_name = "Weights"
+
+[node name="Wings" parent="Selections" instance=ExtResource( 2 )]
+margin_top = 36.0
+margin_right = 61.0
+margin_bottom = 50.0
+display_name = "Wings"
+
+[node name="Parachute" parent="Selections" instance=ExtResource( 2 )]
+margin_top = 54.0
+margin_right = 61.0
+margin_bottom = 68.0
+display_name = "Parachute"
+
+[node name="Controls" type="HBoxContainer" parent="."]
+margin_left = 174.0
+margin_top = 102.0
+margin_right = 261.0
+margin_bottom = 142.0
+rect_scale = Vector2( 1.15824, 1.18739 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="Controls"]
+margin_right = 42.0
+margin_bottom = 40.0
+text = "Back"
+flat = true
+
+[node name="Start" type="Button" parent="Controls"]
+margin_left = 46.0
+margin_right = 87.0
+margin_bottom = 40.0
+text = "Start"
+flat = true
+
+[connection signal="pressed" from="Controls/Back" to="." method="_on_Back_pressed"]
+[connection signal="pressed" from="Controls/Start" to="." method="_on_Start_pressed"]
