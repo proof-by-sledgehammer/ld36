@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ui/main_menu_button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://screens/main_menu_screen.gd" type="Script" id=2]
+[ext_resource path="res://assets/images/main_menu_background.png" type="Texture" id=3]
+[ext_resource path="res://assets/music/main_theme.mp3" type="AudioStream" id=4]
+
+[node name="Main Menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="--------- Audio" type="Node" parent="."]
+
+[node name="Theme" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -10.0
+autoplay = true
+
+[node name="--------- Visuals" type="Node" parent="."]
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="--------- GUI" type="Node" parent="."]
+
+[node name="Buttons" type="GridContainer" parent="."]
+margin_left = 39.0
+margin_top = 60.0
+margin_right = 94.0
+margin_bottom = 152.0
+rect_scale = Vector2( 6.73711, 4.93262 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="New Game" parent="Buttons" instance=ExtResource( 1 )]
+margin_right = 82.0
+text = "New Game"
+
+[node name="Continue" parent="Buttons" instance=ExtResource( 1 )]
+margin_top = 24.0
+margin_right = 82.0
+margin_bottom = 44.0
+text = "Continue"
+
+[node name="Arcade" parent="Buttons" instance=ExtResource( 1 )]
+margin_top = 48.0
+margin_right = 82.0
+margin_bottom = 68.0
+disabled = true
+text = "Arcade"
+
+[node name="Exit" parent="Buttons" instance=ExtResource( 1 )]
+margin_top = 72.0
+margin_right = 82.0
+margin_bottom = 92.0
+text = "Exit"
+
+[connection signal="pressed" from="Buttons/New Game" to="." method="_on_New_Game_pressed"]
+[connection signal="pressed" from="Buttons/Continue" to="." method="_on_Continue_pressed"]
+[connection signal="pressed" from="Buttons/Arcade" to="." method="_on_Arcade_pressed"]
+[connection signal="pressed" from="Buttons/Exit" to="." method="_on_Exit_pressed"]
