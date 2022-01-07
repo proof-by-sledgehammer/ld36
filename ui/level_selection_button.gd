@@ -8,3 +8,7 @@ func init(lvl) -> void:
 	
 	self.level = lvl
 	$Main.text = str(lvl)
+
+func _on_pressed() -> void:
+	State.selected_level = level
+	var _res = get_tree().change_scene("res://screens/ingame_screen.tscn")

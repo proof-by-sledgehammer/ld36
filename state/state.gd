@@ -6,6 +6,8 @@ var max_level_unlocked = 1
 var money = 0
 var stars_per_level = []
 
+var selected_level = null
+
 # ========= Persitance API
 
 func savegame_exists() -> bool:

@@ -51,3 +51,5 @@ margin_left = 896.0
 margin_right = 1340.0
 margin_bottom = 419.0
 texture = ExtResource( 1 )
+
+[connection signal="pressed" from="Main" to="." method="_on_pressed"]
