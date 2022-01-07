@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water1.png-2c35310d3ba847df39b351f4f7362841.stex"
+path="res://.import/sprungfeder.png-0bf93dc9f030ed6ecd5e64262863771c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Tiles/water1.png"
-dest_files=[ "res://.import/water1.png-2c35310d3ba847df39b351f4f7362841.stex" ]
+source_file="res://assets/images/sprungfeder.png"
+dest_files=[ "res://.import/sprungfeder.png-0bf93dc9f030ed6ecd5e64262863771c.stex" ]
 
 [params]
 
