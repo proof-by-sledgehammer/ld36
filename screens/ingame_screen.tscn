@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://screens/ingame_screen.gd" type="Script" id=1]
 [ext_resource path="res://assets/images/BG.png" type="Texture" id=2]
 [ext_resource path="res://ui/upgrade_dialog.tscn" type="PackedScene" id=3]
 [ext_resource path="res://player/cart.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ui/win_dialog.tscn" type="PackedScene" id=5]
 
 [node name="Ingame" type="Node2D"]
 script = ExtResource( 1 )
@@ -33,20 +34,27 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="---------- Environment" type="Node" parent="."]
+
 [node name="---------- Player" type="Node" parent="."]
 
 [node name="Cart" parent="." instance=ExtResource( 4 )]
 position = Vector2( 41, 110 )
 
-[node name="---------- Environment" type="Node" parent="."]
+[node name="---------- UI" type="Node" parent="Cart"]
 
-[node name="---------- UI" type="Node" parent="."]
-
-[node name="UpgradeDialog" parent="." instance=ExtResource( 3 )]
+[node name="UpgradeDialog" parent="Cart" instance=ExtResource( 3 )]
 visible = false
-margin_left = -93.0
-margin_top = 41.0
-margin_right = -93.0
-margin_bottom = 41.0
+margin_left = -200.0
+margin_top = -50.0
+margin_right = -200.0
+margin_bottom = -50.0
 
-[connection signal="on_start" from="UpgradeDialog" to="." method="_on_Upgrade_Dialog_on_start"]
+[node name="WinDialog" parent="Cart" instance=ExtResource( 5 )]
+visible = false
+margin_left = -45.0
+margin_top = -100.0
+margin_right = -45.0
+margin_bottom = -100.0
+
+[connection signal="on_start" from="Cart/UpgradeDialog" to="." method="_on_Upgrade_Dialog_on_start"]

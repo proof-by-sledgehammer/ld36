@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://ui/win_dialog.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/dialog_background.png" type="Texture" id=2]
+
+[node name="Win Dialog" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.233219, 0.339594 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+text = "You Won"
+
+[node name="Buttons" type="HBoxContainer" parent="."]
+margin_top = 118.0
+margin_right = 40.0
+margin_bottom = 158.0
+rect_scale = Vector2( 0.64, 0.44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Home" type="Button" parent="Buttons"]
+margin_right = 51.0
+margin_bottom = 40.0
+text = "Home"
+flat = true
+
+[node name="Retry" type="Button" parent="Buttons"]
+margin_left = 55.0
+margin_right = 100.0
+margin_bottom = 40.0
+text = "Retry"
+flat = true
+
+[node name="Next" type="Button" parent="Buttons"]
+margin_left = 104.0
+margin_right = 146.0
+margin_bottom = 40.0
+text = "Next"
+flat = true
+
+[connection signal="pressed" from="Buttons/Home" to="." method="_on_Home_pressed"]
+[connection signal="pressed" from="Buttons/Retry" to="." method="_on_Retry_pressed"]
+[connection signal="pressed" from="Buttons/Next" to="." method="_on_Next_pressed"]

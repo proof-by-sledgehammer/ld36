@@ -1,6 +1,7 @@
 extends Node
 
 signal on_level_shown
+signal on_won
 
 const SECONDS_TO_SHOW_LEVEL = 5
 
@@ -18,3 +19,9 @@ func _process(delta):
 			$CameraPath/Follow/Cam.current = false
 			is_showing_level = false
 			emit_signal("on_level_shown")
+
+
+func _on_won():
+	if (State.selected_level >= State.max_level_unlocked):
+		State.max_level_unlocked = State.selected_level + 1
+	emit_signal("on_won")
