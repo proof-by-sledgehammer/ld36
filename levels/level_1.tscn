@@ -1,13 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://start_slopes/slope_1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://environment/environment_tiles.tres" type="TileSet" id=2]
+[ext_resource path="res://player/barn.tscn" type="PackedScene" id=3]
 
 [node name="Level" type="Node2D"]
 position = Vector2( 0, 157 )
 
 [node name="Slope" parent="." instance=ExtResource( 1 )]
 position = Vector2( -10, 5 )
+
+[node name="Barn" parent="." instance=ExtResource( 3 )]
+position = Vector2( 470, 153 )
 
 [node name="Environment" type="TileMap" parent="."]
 scale = Vector2( 0.5, 0.5 )
