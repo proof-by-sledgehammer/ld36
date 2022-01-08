@@ -37,3 +37,5 @@ rotation = 3.04884
 loop = false
 
 [node name="Cam" type="Camera2D" parent="CameraPath/Follow"]
+
+[connection signal="on_won" from="Barn" to="." method="_on_won"]
