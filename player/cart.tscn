@@ -4,16 +4,17 @@
 friction = 0.0
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 10, 5 )
+extents = Vector2( 25, 15 )
 
 [node name="Cart" type="RigidBody2D"]
+mass = 2.64
 physics_material_override = SubResource( 2 )
 
 [node name="Skin" type="ColorRect" parent="."]
-margin_left = -10.0
-margin_top = -5.0
-margin_right = 10.0
-margin_bottom = 5.0
+margin_left = -25.0
+margin_top = -15.0
+margin_right = 25.0
+margin_bottom = 15.0
 color = Color( 0.0784314, 0.0745098, 0.517647, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
