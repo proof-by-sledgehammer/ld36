@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/sprungfeder_in_wasser.png-f9463ba9e67464e44de83bfcd01a8a62.stex"
+path="res://.import/spring.png-9e9407a84360035b6e51c1e89c206c30.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/sprungfeder_in_wasser.png"
-dest_files=[ "res://.import/sprungfeder_in_wasser.png-f9463ba9e67464e44de83bfcd01a8a62.stex" ]
+source_file="res://assets/images/spring.png"
+dest_files=[ "res://.import/spring.png-9e9407a84360035b6e51c1e89c206c30.stex" ]
 
 [params]
 
