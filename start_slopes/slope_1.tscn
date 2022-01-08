@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/images/startrampe.png" type="Texture" id=1]
+
+[node name="Slope" type="RigidBody2D"]
+mode = 1
+
+[node name="Hitbox" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0, 0, 24, 0, 32, 21, 48, 42, 71, 57, 97, 66, 118, 66, 135, 66, 135, 88, 0, 88 )
+
+[node name="Skin" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+rect_scale = Vector2( 0.365301, 0.350577 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}

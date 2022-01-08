@@ -9,7 +9,7 @@ func pause_physics() -> void:
 	$Cart.mode = RigidBody2D.MODE_STATIC
 
 func unpause_physics() -> void:
-	$Cart.mode = RigidBody2D.MODE_CHARACTER
+	$Cart.mode = RigidBody2D.MODE_RIGID
 
 
 func _ready() -> void:
