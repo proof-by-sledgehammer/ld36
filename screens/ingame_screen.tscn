@@ -14,10 +14,20 @@ level_anchor = NodePath("---------- Environment")
 [node name="---------- Visual" type="Node" parent="."]
 
 [node name="Background" type="TextureRect" parent="."]
-margin_left = -5.0
-margin_top = -239.0
-margin_right = 1275.0
-margin_bottom = 721.0
+margin_left = -415.0
+margin_top = -230.0
+margin_right = 865.0
+margin_bottom = 730.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background2" type="TextureRect" parent="."]
+margin_left = 866.0
+margin_top = -229.0
+margin_right = 2146.0
+margin_bottom = 731.0
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -32,10 +42,11 @@ position = Vector2( 41, 110 )
 
 [node name="---------- UI" type="Node" parent="."]
 
-[node name="Upgrade Dialog" parent="." instance=ExtResource( 3 )]
-margin_left = 231.0
-margin_top = 160.0
-margin_right = 231.0
-margin_bottom = 160.0
+[node name="UpgradeDialog" parent="." instance=ExtResource( 3 )]
+visible = false
+margin_left = -93.0
+margin_top = 41.0
+margin_right = -93.0
+margin_bottom = 41.0
 
-[connection signal="on_start" from="Upgrade Dialog" to="." method="_on_Upgrade_Dialog_on_start"]
+[connection signal="on_start" from="UpgradeDialog" to="." method="_on_Upgrade_Dialog_on_start"]
