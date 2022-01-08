@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/schanze_in_wasser.png-180311b0b8963ec3dcf1cc2fe520f430.stex"
+path="res://.import/schanze_in_wasser.png-7f313f53d63abe6dda248b1ef1e8dd59.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/images/Tiles/schanze_in_wasser.png"
-dest_files=[ "res://.import/schanze_in_wasser.png-180311b0b8963ec3dcf1cc2fe520f430.stex" ]
+source_file="res://assets/images/schanze_in_wasser.png"
+dest_files=[ "res://.import/schanze_in_wasser.png-7f313f53d63abe6dda248b1ef1e8dd59.stex" ]
 
 [params]
 
