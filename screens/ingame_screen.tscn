@@ -7,6 +7,7 @@
 
 [node name="Ingame" type="Node2D"]
 script = ExtResource( 1 )
+level_anchor = NodePath("---------- Environment")
 
 [node name="---------- Audio" type="Node" parent="."]
 
@@ -26,6 +27,8 @@ __meta__ = {
 
 [node name="Cart" parent="." instance=ExtResource( 4 )]
 position = Vector2( 41, 110 )
+
+[node name="---------- Environment" type="Node" parent="."]
 
 [node name="---------- UI" type="Node" parent="."]
 
