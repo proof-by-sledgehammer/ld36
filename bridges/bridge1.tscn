@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://assets/images/Tiles/Brücke.png" type="Texture" id=1]
+[ext_resource path="res://assets/images/bridge.png" type="Texture" id=1]
 
 [node name="bridge" type="RigidBody2D"]
 
@@ -13,5 +13,6 @@ __meta__ = {
 }
 
 [node name="hitbox" type="CollisionPolygon2D" parent="."]
-scale = Vector2( 0.998132, 1 )
+position = Vector2( 0.800374, 1.6221 )
+scale = Vector2( 1.56553, 1.56846 )
 polygon = PoolVector2Array( -0.259552, 42.7533, 28.9193, 42.7259, 39.6697, 33.1997, 52.6615, 24.2927, 64.4285, 18.0491, 73.3172, 13.5869, 86.9389, 8.27759, 102.249, 4.0424, 114.917, 1.59734, 128.39, 0.0691814, 146.719, 0.243828, 163.044, 1.77199, 181.609, 5.53563, 199.937, 11.7356, 214.329, 18.1975, 228.773, 26.6505, 239.324, 33.9944, 248.291, 41.2859, 249.822, 43.0324, 277.529, 43.207, 277.558, 104.926, -0.0207182, 105.145 )
