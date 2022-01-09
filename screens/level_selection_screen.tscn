@@ -36,7 +36,6 @@ margin_left = 30.0
 margin_top = 148.0
 margin_right = 70.0
 margin_bottom = 188.0
-rect_scale = Vector2( 4.77115, 3.49431 )
 columns = 5
 __meta__ = {
 "_edit_use_anchors_": false
