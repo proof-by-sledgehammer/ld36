@@ -42,27 +42,27 @@ __meta__ = {
 }
 
 [node name="New Game" parent="Buttons" instance=ExtResource( 1 )]
-margin_right = 97.0
-margin_bottom = 29.0
+margin_right = 295.0
+margin_bottom = 83.0
 text = "New Game"
 
 [node name="Continue" parent="Buttons" instance=ExtResource( 1 )]
-margin_top = 33.0
-margin_right = 97.0
-margin_bottom = 62.0
+margin_top = 87.0
+margin_right = 295.0
+margin_bottom = 170.0
 text = "Continue"
 
 [node name="Arcade" parent="Buttons" instance=ExtResource( 1 )]
-margin_top = 66.0
-margin_right = 97.0
-margin_bottom = 95.0
+margin_top = 174.0
+margin_right = 295.0
+margin_bottom = 257.0
 disabled = true
 text = "Arcade"
 
 [node name="Exit" parent="Buttons" instance=ExtResource( 1 )]
-margin_top = 99.0
-margin_right = 97.0
-margin_bottom = 128.0
+margin_top = 261.0
+margin_right = 295.0
+margin_bottom = 344.0
 text = "Exit"
 
 [connection signal="pressed" from="Buttons/New Game" to="." method="_on_New_Game_pressed"]

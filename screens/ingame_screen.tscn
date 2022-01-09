@@ -39,7 +39,7 @@ __meta__ = {
 [node name="---------- Player" type="Node" parent="."]
 
 [node name="Cart" parent="." instance=ExtResource( 4 )]
-position = Vector2( 41, 110 )
+position = Vector2( -1, 132 )
 
 [node name="---------- UI" type="Node" parent="Cart"]
 

@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://assets/images/wheel.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+
+[node name="Wheel" type="RigidBody2D"]
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Skin" type="TextureRect" parent="."]
+margin_left = -11.0
+margin_top = -11.0
+margin_right = 357.0
+margin_bottom = 356.0
+rect_scale = Vector2( 0.05987, 0.0596521 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
