@@ -1,0 +1,47 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://environment/dune.gd" type="Script" id=1]
+[ext_resource path="res://assets/images/dune1.png" type="Texture" id=3]
+[ext_resource path="res://assets/images/dune3.png" type="Texture" id=4]
+[ext_resource path="res://assets/images/dune2.png" type="Texture" id=5]
+
+[node name="Dune" type="StaticBody2D"]
+script = ExtResource( 1 )
+skins = [ NodePath("Big Cactus Skin"), NodePath("Small Cactus Skin"), NodePath("Dead Bush Skin"), NodePath("Skull Skin") ]
+
+[node name="Big Cactus Skin" type="TextureRect" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Small Cactus Skin" type="TextureRect" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Dead Bush Skin" type="TextureRect" parent="."]
+visible = false
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Skull Skin" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Hitbox" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -0.406982, 133.218, 57.3214, 129.35, 111.181, 114.174, 170.398, 79.0607, 194.203, 65.075, 237.053, 49.0062, 287.045, 37.9962, 324.538, 35.6156, 364.115, 40.0792, 405.775, 52.2795, 438.626, 64.4798, 488.321, 91.8562, 516.292, 105.247, 563.01, 118.637, 631.511, 129.409, 705.01, 134.468 )
