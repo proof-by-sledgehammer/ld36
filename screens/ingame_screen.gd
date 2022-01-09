@@ -32,6 +32,7 @@ func _ready() -> void:
 
 func _on_Upgrade_Dialog_on_start():
 	unpause_physics()
+	$Cart.apply_initial_boost()
 
 func _on_won():
 	call_deferred("pause_physics")
