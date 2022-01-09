@@ -2,7 +2,7 @@ extends Node
 
 export(String) var savegame_path = "user://savegame"
 
-var max_level_unlocked = 1
+var max_level_unlocked = 15
 var money = 0
 var stars_per_level = []
 
