@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/images/Obelisk.png" type="Texture" id=1]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 589.399, 1198.63, 87.4141, 1197.82, 87.1209, 1128.07, 256.302, 1128.17, 255.933, 131.75, 338.331, -0.0594616, 421.271, 131.46, 421.215, 1127.64, 589.184, 1127.89 )
