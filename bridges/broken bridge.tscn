@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/images/broken_bridge.png" type="Texture" id=1]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0.109615, 61.8852, 43.6804, 61.8852, 45.9773, 59.4823, 60.1222, 47.7386, 76.5251, 36.1055, 89.9018, 27.9597, 107.842, 18.6638, 123.201, 11.9649, 141.867, 5.27119, 158.805, 0.819345, 160.395, 8.8871, 145.342, 12.9556, 117.092, 23.833, 97.2984, 33.5539, 83.1756, 41.8329, 74.0712, 47.7836, 73.9821, 80.0764, 49.0856, 80.5104, 49.1175, 158.959, 0.0992889, 159.028 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 274.576, 8.53743, 276.276, 0.790265, 287.974, 3.50021, 303.298, 8.49228, 317.349, 14.0009, 330.453, 19.9459, 346.226, 28.2888, 358.811, 36.0574, 370.437, 43.8598, 393.074, 61.7412, 435.641, 61.7056, 435.778, 158.853, 387.099, 159.09, 387.032, 80.602, 361.853, 80.0578, 361.617, 48.0433, 349.824, 40.2146, 325.715, 26.8412, 313.449, 21.4473, 286.07, 11.6401 )
